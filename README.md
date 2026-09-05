@@ -10,8 +10,8 @@ Source: https://www.kaggle.com/datasets/mexwell/natural-disasters-emergency-even
 | Member | Roll No. | Task Set | Focus |
 |---|---|---|---|
 | Arnav Jain | BT2024233 | A — Temporal trends | Disaster frequency & type trends over time (1900–2023) |
-| KAlpit | BT2024093 | B — Geographic distribution | Country/region-level disaster patterns |
-| TBD | TBD | C — Impact severity | Deaths, people affected, economic damage |
+| Kalpit Phogat | BT2024093 | B — Geographic distribution | Country/region-level disaster patterns |
+| Lakshya Jain | BT2024044 | C — Impact severity | Deaths, people affected, economic damage |
 
 ## Repo structure
 

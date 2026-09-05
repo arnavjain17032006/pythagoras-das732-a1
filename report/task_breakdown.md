@@ -14,7 +14,7 @@ Variables: Year, Disaster Type/Subtype, Total Events
 - **Comparison**: pre-1950 vs post-1950 event rates (data reporting improved after WWII — worth flagging as a caveat)
 - Chart types: stacked area chart (events by type over time), line chart (yearly totals), small multiples per disaster type
 
-## Task Set B — Geographic Distribution (KAlpit)
+## Task Set B — Geographic Distribution (Kalpit Phogat)
 Variables: Country, ISO, Disaster Type, Total Events
 
 - **Overview**: choropleth map of total disaster events by country
@@ -22,7 +22,7 @@ Variables: Country, ISO, Disaster Type, Total Events
 - **Comparison**: regional/continental disaster-type profiles
 - Chart types: choropleth map, filterable bar chart by country, heatmap (country x disaster type)
 
-## Task Set C — Impact Severity (3rd member, TBD)
+## Task Set C — Impact Severity (Lakshya Jain)
 Variables: Total Deaths, Total Affected, Total Damage (USD, adjusted), CPI
 
 - **Overview**: top-10 deadliest and costliest disaster types/countries
