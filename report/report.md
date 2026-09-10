@@ -30,6 +30,8 @@ This question is addressed through three complementary, non-overlapping task set
 
 # 3. Tasks and Visualizations
 
+*Per TA/instructor guidance (Sep 10, 2026): up to 15 visualizations may be built per person, but only a curated subset — favoring multi-variable, informative charts over simple 2-variable ones, across a variety of chart types — should appear below. Every figure has a number, caption, in-text reference, and interpretation.*
+
 ## 3.1 Task Set A — Temporal Trends (Arnav Jain)
 
 **Variables used:** Year, Disaster Type / Subtype, Total Events, Reporting Era
@@ -42,9 +44,11 @@ This question is addressed through three complementary, non-overlapping task set
 
 **Planned chart types:** stacked area chart (events by type over time), line chart (yearly totals), small multiples per disaster type.
 
-**Visualizations:** *[Fig1, Fig2, ... — to be inserted once built in Tableau]*
+**Figure 1.** *[Chart title]* — image placeholder for `images/Fig1.png`.
+*Caption:* [One or two sentences describing what the figure shows and which variables/encodings are used.]
+*Interpretation:* [What this figure reveals in answer to the guiding question; reference it in prose as "As shown in Figure 1, ..."]
 
-**Inferences:** *[to be filled in after analysis]*
+**Figure 2.** *[repeat pattern for each figure selected for this task set — aim for ~4-6, prioritizing multi-variable charts]*
 
 ## 3.2 Task Set B — Geographic Distribution (Kalpit Phogat)
 
@@ -58,9 +62,11 @@ This question is addressed through three complementary, non-overlapping task set
 
 **Planned chart types:** choropleth map, filterable bar chart by country, heatmap (country × disaster type).
 
-**Visualizations:** *[Fig_, Fig_, ... — to be inserted]*
+**Figure N.** *[Chart title]* — image placeholder for `images/FigN.png`.
+*Caption:* [description + variables/encodings used.]
+*Interpretation:* [finding, referenced in prose as "Figure N shows ..."]
 
-**Inferences:** *[to be filled in after analysis]*
+**Figure N+1.** *[repeat for ~4-6 figures for this task set]*
 
 ## 3.3 Task Set C — Impact Severity (Lakshya Jain)
 
@@ -74,9 +80,11 @@ This question is addressed through three complementary, non-overlapping task set
 
 **Planned chart types:** ranked bar charts, scatterplot (events vs. deaths), dual-axis time series (damage vs. deaths).
 
-**Visualizations:** *[Fig_, Fig_, ... — to be inserted]*
+**Figure M.** *[Chart title]* — image placeholder for `images/FigM.png`.
+*Caption:* [description + variables/encodings used.]
+*Interpretation:* [finding, referenced in prose as "Figure M shows ..."]
 
-**Inferences:** *[to be filled in after analysis]*
+**Figure M+1.** *[repeat for ~4-6 figures for this task set]*
 
 # 4. Overall Conclusions
 
