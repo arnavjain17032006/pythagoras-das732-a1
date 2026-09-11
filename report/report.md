@@ -34,7 +34,7 @@ This question is addressed through three complementary, non-overlapping task set
 
 # 5. Tasks and Visualizations
 
-*Per TA/instructor guidance (Sep 10, 2026): visualizations favor multi-variable, informative encodings over simple 2-variable charts, across a variety of chart types. Fifteen figures are presented below (5 per task set), each referenced and interpreted in the text.*
+*Per TA/instructor guidance (Sep 10, 2026): each team member may generate up to 15 visualizations individually, but the report should present only a curated subset per person favoring multi-variable, informative encodings over simple 2-variable charts, across a variety of chart types. Five curated figures are presented below per task set (well within each member's individual 15-visualization allowance), each referenced and interpreted in the text.*
 
 ## 5.1 Task Set A — Temporal Trends (Arnav Jain)
 
@@ -145,7 +145,7 @@ Across all three task sets, a consistent and quantified picture emerges. Recorde
 
 | Member | Roll Number | Task Set | Contribution |
 |---|---|---|---|
-| Arnav Jain | BT2024233 | A — Temporal Trends | Dataset selection, preprocessing, Task Set A analysis and Figures 1-5, repository setup |
+| Arnav Jain | BT2024233 | A — Temporal Trends | Preprocessing, Task Set A analysis and Figures 1-5, repository setup |
 | Kalpit Phogat | BT2024093 | B — Geographic Distribution | Task Set B analysis and Figures 6-10 |
 | Lakshya Jain | BT2024044 | C — Impact Severity | Task Set C analysis and Figures 11-15 |
 
