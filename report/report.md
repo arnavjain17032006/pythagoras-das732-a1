@@ -115,6 +115,17 @@ This question is addressed through three complementary, non-overlapping task set
 
 **Figure 15.** Scatter, Year vs. Total Events with linear trend line and R². *Interpretation:* A simple linear fit already explains a substantial share of the year-to-year variance (see R² printed on the figure), confirming the rise is a real, fittable long-run trend rather than pure noise — while the visible curvature in the residuals (events accelerate faster than a straight line after 1980) is exactly why Figures 1-12 use non-linear/segmented views to characterize the trend more precisely.
 
+### 5.1 Limitations (Task Set A)
+
+- **Reporting-era confound is the central threat to validity here.** Every temporal claim above is measured against a baseline (pre-1980) that is known to be undercounted (Figure 3), so absolute growth multiples (e.g. the 17.8× flood figure in Figure 4) should be read as upper bounds on the true increase, not exact multipliers — some of that ratio is definitely reporting infrastructure, not physical change.
+- **Earthquake-as-control is imperfect.** Earthquakes are used throughout as a "hard to under-report" baseline to isolate the reporting effect from the real effect, but even earthquake *detection* improved substantially post-1980 with denser seismograph networks, so the 3.8× earthquake rise (Figure 4) is itself not a pure zero-reporting-bias measurement — it likely still includes some artifact, meaning the true non-reporting rise in floods/storms may be smaller than the naive 17.8×/3.8× ratio suggests.
+- **5-year and 10-year smoothing windows (Figures 1, 6, 8, 14, 20) trade off responsiveness for readability** — a genuinely sharp single-year spike or dip can be visually flattened by the rolling average, so the smoothed figures should always be read alongside an unsmoothed view (Figure 5) before drawing conclusions about any single year.
+- **Disaster Subtype analysis (Figure 8) is limited to floods** as the single largest category; the same subtype-level drill-down was not performed for every disaster type due to time constraints, so subtype-level dynamics for storms, earthquakes, etc. remain unexamined here.
+
+### 5.2 Conclusion (Task Set A)
+
+Recorded natural-disaster frequency has risen sharply since the 1970s-80s, but not uniformly: floods and storms drive almost the entire increase, while geophysical events (earthquakes, volcanic activity) — used here as an implicit control for reporting-infrastructure improvements — rise much more modestly. Comparing the four major types' pre/post-1980 annualized rates (floods 17.8×, storms 9.2×, droughts 8.2×, earthquakes 3.8×) suggests part of the overall rise is a global reporting artifact common to all types, but the amount by which floods and storms exceed the earthquake baseline points to a real, additional increase in hydro-meteorological disaster frequency. Volatility in annual event counts has also risen alongside the mean (Figure 14), meaning disaster-response planning today must budget for greater year-to-year unpredictability, not just a higher average load.
+
 # 6. Task Set B — Geographic Distribution (Kalpit Phogat)
 
 **Variables used:** Country, ISO, Disaster Type, Disaster Subtype, Total Events, Reporting Era, Decade
@@ -181,6 +192,17 @@ This question is addressed through three complementary, non-overlapping task set
 
 **Figure 30.** Dual-axis bar chart, geographic breadth (number of countries affected) vs. Total Events, by disaster type. *Interpretation:* Storms affect the most countries (195) despite having fewer total events than floods (5,796 events across 190 countries), meaning storms are the most globally *widespread* hazard, while floods are the highest-*volume* hazard — two distinct rankings that would be conflated by looking at either metric alone.
 
+### 6.1 Limitations (Task Set B)
+
+- **Country-boundary changes over a 124-year span distort ranking and ratio figures.** Figure 26's diverging bar chart includes entries like the former Germany Fed. Rep., whose "decline" in event ratio reflects German reunification changing how records are attributed, not a real drop in disaster exposure — any country-list analysis spanning pre- and post-1980 needs this kind of manual sanity check before the numbers are trusted at face value.
+- **No sub-national geography.** Every figure in this task set treats a country as a single point/row, so a country as large and climatically varied as the USA gets one "dominant disaster type" label (Figure 16, 18) that necessarily hides the fact that, e.g., wildfire risk is concentrated in the west and hurricane risk in the southeast — a national-level policy read from these figures would be too coarse for sub-national resource allocation.
+- **No population or land-area normalization.** Rankings by raw Total Events (Figure 19) or Total Affected mechanically favor large, populous countries; a small island nation with a high *rate* of disaster exposure relative to its size would not appear near the top of any of these figures even if it faces comparable relative risk.
+- **The "≥3 pre-1980 events" filter used in Figure 26** to compute growth ratios excludes many small countries with very few pre-1980 records, meaning the diverging-bar comparison is only representative of countries with at least a minimal historical record — the true fastest-growing country overall could be one filtered out here for having, say, 1-2 pre-1980 events.
+
+### 6.2 Conclusion (Task Set B)
+
+Disaster exposure is geographically concentrated and unevenly distributed: a small set of countries (USA, China, India, Philippines, Indonesia) account for a disproportionate share of global events, and each has a visibly distinct disaster-type composition rather than a generic "high risk" profile. More importantly, that geography is not static — the slopegraph comparison of pre- and post-1980 country rankings shows Vietnam, Thailand, and Malaysia rising dramatically (19.7×, 26.0×, and 17.6× respectively), identifying Southeast Asia as an emergent hotspot that a purely historical risk assessment would have missed. Persistence (years-active) and diversity (distinct types/subtypes experienced) further separate countries like the USA, Japan, China, India, and the Philippines — continuously and multiply exposed across nearly the entire dataset's span — from countries with narrower but still severe single-type exposure, arguing that geographic disaster policy needs both a "how often" and a "how varied" lens, not just a single risk score per country.
+
 # 7. Task Set C — Impact Severity (Lakshya Jain)
 
 **Variables used:** Total Deaths, Total Affected, Total Damage (USD, original), Total Damage (USD, adjusted), CPI, Disaster Type, Country, Year, Decade
@@ -246,6 +268,17 @@ This question is addressed through three complementary, non-overlapping task set
 ![Figure 45](../images/Fig45.png)
 
 **Figure 45.** Heatmap (log scale), Disaster Type × Decade, color = Total Deaths — the severity-side complement to Figure 2's event-count heatmap. *Interpretation:* Unlike Figure 2, where floods dominate every recent decade, the deadliest cells in this heatmap are scattered across drought and earthquake rows in specific decades (reflecting individual catastrophic famines and earthquakes) rather than concentrated in the same flood-heavy decades — visually confirming that the decades with the *most events* are not the same as the decades with the *most deaths*.
+
+### 7.1 Limitations (Task Set C)
+
+- **Missing damage/death data is the single biggest constraint on this task set.** Roughly 63% of records have no damage figure and ~29% have no death figure at all, concentrated in older and lower-income-country records (Section 2). Every ranking and correlation figure here (Figures 31, 34-38, 40-41) is computed only over the *non-missing* subset, which likely under-represents the true severity of disasters in countries with weaker historical reporting capacity — the true global damage/death totals are almost certainly higher than what these figures show.
+- **Drought's death toll is dominated by a small number of historical mega-events** (e.g. large 20th-century famines), so its extreme deaths-per-event ratio (Figure 36, ~14,631) is heavily influenced by outliers rather than being representative of a "typical" drought — this is a case where a single aggregate ratio can be misleading without the distributional context in Figure 41.
+- **Damage figures are not adjusted for growth in global asset value**, only for inflation (CPI). This means part of the rising CPI-adjusted damage trend (Figures 33, 42, 44) reflects more infrastructure and property existing in disaster-prone areas today than a century ago, not disasters becoming individually more destructive — a distinction this task set's figures cannot separate out with the fields available.
+- **Country-type aggregation (used in Figures 31, 40) can mask within-category variance** — a single "Country-DisasterType" data point sums potentially many distinct events across 1900-2023, so the scatter positions represent a long-run total, not any single disaster's severity.
+
+### 7.2 Conclusion (Task Set C)
+
+Severity does not track frequency. Drought causes the highest deaths-per-event by a wide margin (~48× the least lethal major category) despite having one of the lowest event counts among major disaster types, while floods and storms — by far the most frequent — have comparatively low per-event lethality. The correlation analysis (Figure 35) makes this precise: event count is essentially uncorrelated with deaths (r ≈ 0.00) but moderately correlated with economic damage (r ≈ 0.41), meaning frequency-based risk models are reasonable proxies for economic exposure but poor proxies for expected loss of life. Economic damage has also risen substantially even after removing inflation's effect (Figure 44), while deaths have not risen proportionally, suggesting early-warning and evacuation improvements have partially decoupled economic exposure from human cost. Together this argues that severity-focused disaster policy needs to be type-specific: drought and earthquake response should prioritize early warning and mortality prevention, while flood/storm response can reasonably prioritize economic/infrastructure resilience given their lower per-event lethality.
 
 # 8. Limitations
 
