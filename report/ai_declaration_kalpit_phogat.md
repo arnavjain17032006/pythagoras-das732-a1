@@ -41,8 +41,8 @@
 
 ---
 
-**Name:** _______________________
-**Roll Number:** _______________________
-**Task Set:** _______________________ (A / B / C)
+**Name:** Kalpit Phogat
+**Roll Number:** BT2024093
+**Task Set:** B - Geographic Distribution
 **Signature:** _______________________
 **Date:** _______________________

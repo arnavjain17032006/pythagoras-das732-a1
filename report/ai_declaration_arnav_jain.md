@@ -41,8 +41,8 @@
 
 ---
 
-**Name:** _______________________
-**Roll Number:** _______________________
-**Task Set:** _______________________ (A / B / C)
+**Name:** Arnav Jain
+**Roll Number:** BT2024233
+**Task Set:** A - Temporal Trends
 **Signature:** _______________________
 **Date:** _______________________
