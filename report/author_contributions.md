@@ -5,10 +5,10 @@
 
 | Member | Roll Number | Task Set | Contribution |
 |---|---|---|---|
-| Arnav Jain | BT2024233 | A — Temporal Trends | *[to be filled: specific visualizations built, inferences drawn, report sections written]* |
-| Kalpit Phogat | BT2024093 | B — Geographic Distribution | *[to be filled]* |
-| Lakshya Jain | BT2024044 | C — Impact Severity | *[to be filled]* |
+| Arnav Jain | BT2024233 | A — Temporal Trends | Preprocessing, Task Set A analysis and Figures 1-15, repository setup |
+| Kalpit Phogat | BT2024093 | B — Geographic Distribution | Task Set B analysis and Figures 16-30 |
+| Lakshya Jain | BT2024044 | C — Impact Severity | Task Set C analysis and Figures 31-45 |
 
-**Data preprocessing:** *[name the member(s) who handled cleaning/processing — this person also opens the video demo's first minute per assignment requirement]*
+**Data preprocessing:** Arnav Jain (also covers the first minute of the video demo).
 
-**Report writing/compilation:** *[to be filled]*
+**Report writing/compilation:** Arnav Jain, with contributions from all members for their respective task sets.

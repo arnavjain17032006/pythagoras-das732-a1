@@ -1,49 +1,47 @@
 # Video Demo Transcript — Arnav Jain's Portion Only
 
-**Target runtime: ~2:20** (1:00 preprocessing intro + ~1:20 Task Set A), fitting within the assignment's overall 5:00 cap for all three presenters combined. Trim further if Kalpit/Lakshya need more time.
+**Target runtime: ~2:20** (1:00 preprocessing intro + ~1:20 Task Set A), fitting within the assignment's overall 5:00 cap for all three presenters combined. Trim further if the other presenters need more time.
 
 **Camera:** the assignment does not require a face-cam — it only requires "each member explains their task, visualization solutions, and inferences." A screen recording with voiceover is sufficient; showing your face is optional.
 
 ---
 
-## [0:00 – 1:00] Introduction & Preprocessing
+## 0:00 – 1:00 Introduction & Preprocessing
 
 **On screen:** the raw CSV vs. the cleaned CSV side by side, or `code/preprocess.py`, or the cleaned dataset (`data/emdat_cleaned.csv`) loaded in Tableau/Excel.
 
-"Hi, we're Team Pythagoras — I'm Arnav Jain, and with me are Kalpit Phogat and Lakshya Jain. For this assignment we worked with the EM-DAT Natural Disasters Emergency Events Database: just over ten thousand records covering two hundred and twenty-five countries and thirteen disaster types, spanning 1900 to 2023.
+"Hi, I'm Arnav Jain from Team Pythagoras. For this assignment we worked with the EM-DAT Natural Disasters Emergency Events Database: just over ten thousand records covering two hundred and twenty-five countries and thirteen disaster types, spanning 1900 to 2023.
 
 Before any analysis, we had to clean this dataset. The source file used semicolons instead of commas, so the first step was converting the delimiter so it would load correctly. We also fixed a couple of typos in the source column names, and corrected the CPI column, which was stored with a comma as the decimal separator — pandas was reading the whole column as text until we fixed that.
 
 The bigger decision was how to handle missing data. About sixty-three percent of records have no damage figure at all, and almost a third are missing death or affected counts — mostly from before 1980. We deliberately left these as missing rather than filling them in as zero, because in this dataset 'zero impact' and 'not reported' are very different things. We also added a field marking each record as Pre-1980 or 1980-to-present, because a big part of our story is figuring out how much of the rise in recorded disasters is real, versus just better record-keeping over time.
 
-With that cleaned dataset, we split into three task sets: I looked at how disasters have changed over time, Kalpit looked at where they happen, and Lakshya looked at how severe they are."
+With that cleaned dataset, we split into three task sets covering when disasters happen, where they happen, and how severe they are. My task set covers temporal trends."
 
 ---
 
-## [1:00 – 1:30] Task Set A, Part 1 — The Overall Rise
+## 1:00 – 1:30 Task Set A, Part 1 — The Overall Rise
 
 **On screen:** Figure 1 (`images/Fig1.png`), or the equivalent live sheet in Tableau if connected.
 
-"Starting with time. Our stacked area chart of events by type [Figure 1] shows recorded events going from single digits a year before 1970 to over three hundred a year by the mid-2000s — more than a thirty-fold increase — driven almost entirely by floods and storms, not earthquakes."
+"Starting with time. Our stacked area chart of events by type (Figure 1) shows recorded events going from single digits a year before 1970 to over three hundred a year by the mid-2000s — more than a thirty-fold increase — driven almost entirely by floods and storms, not earthquakes."
 
-## [1:30 – 1:50] Task Set A, Part 2 — Real Rise or Just Better Reporting?
+## 1:30 – 1:50 Task Set A, Part 2 — Real Rise or Just Better Reporting?
 
 **On screen:** Figure 4 (`images/Fig4.png`) — the pre/post-1980 annualized-rate bar chart.
 
-"That raises the obvious question: is this real, or just better reporting? We used earthquakes as a control, since a strong earthquake is hard to miss even with 1950s infrastructure. Here's the annualized comparison [Figure 4]: floods rise nearly eighteen-fold after 1980, storms about nine-fold, but earthquakes only rise about four-fold. That gap tells us two things are happening — a general reporting improvement affecting every category by roughly that four-fold earthquake baseline, and then a real, additional rise in flood and storm frequency on top of that."
+"That raises the obvious question: is this real, or just better reporting? We used earthquakes as a control, since a strong earthquake is hard to miss even with 1950s infrastructure. Here's the annualized comparison (Figure 4): floods rise nearly eighteen-fold after 1980, storms about nine-fold, but earthquakes only rise about four-fold. That gap tells us two things are happening — a general reporting improvement affecting every category by roughly that four-fold earthquake baseline, and then a real, additional rise in flood and storm frequency on top of that."
 
-## [1:50 – 2:20] Task Set A, Part 3 — Two Supporting Figures
+## 1:50 – 2:20 Task Set A, Part 3 — Two Supporting Figures
 
 **On screen:** Figure 3 (`images/Fig3.png`), then Figure 14 (`images/Fig14.png`).
 
-"Two more figures worth flagging: our small-multiples view [Figure 3] shows every single disaster type — even earthquakes and volcanic eruptions — near-zero before 1980, which is direct evidence that gap is a reporting artifact, not a quiet era. And our volatility chart [Figure 14] shows that year-to-year unpredictability in disaster counts has also risen alongside the average — so response planning today needs to budget for that swing, not just a higher average load.
-
-Over to Kalpit for the geographic side."
+"Two more figures worth flagging: our small-multiples view (Figure 3) shows every single disaster type — even earthquakes and volcanic eruptions — near-zero before 1980, which is direct evidence that gap is a reporting artifact, not a quiet era. And our volatility chart (Figure 14) shows that year-to-year unpredictability in disaster counts has also risen alongside the average — so response planning today needs to budget for that swing, not just a higher average load."
 
 ---
 
 ## Notes
 
-- This portion alone runs to roughly 2:20 at a natural ~150 words/minute pace — leaving Kalpit and Lakshya about 2:40 combined for their sections plus a short closing, per the assignment's 5:00 total cap.
-- If the team wants each of the three main sections to be closer to equal length, trim the Task Set A section down to the [1:00–1:50] block only (Figures 1 and 4, drop Figure 3/14) to bring this portion to about 1:40 total.
+- This portion alone runs to roughly 2:20 at a natural ~150 words/minute pace — leaving about 2:40 combined for the other two task sets plus a short closing, per the assignment's 5:00 total cap.
+- If the team wants each of the three main sections to be closer to equal length, trim the Task Set A section down to the 1:00-1:50 block only (Figures 1 and 4, drop Figure 3/14) to bring this portion to about 1:40 total.
 - The full 15-figure detailed script for Task Set A (used for the written report, not the video) is in `report.md` Section 5 — pull additional lines from there only if the team decides to extend the video beyond 5 minutes for a non-submission version.
